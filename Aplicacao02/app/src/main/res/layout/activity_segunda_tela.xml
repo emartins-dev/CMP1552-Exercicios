@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SegundaTelaActivity">
+
+    <!-- Container para a imagem e informações -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewAppNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Imagem de contorno -->
+        <ImageView
+            android:id="@+id/imageViewContorno"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/contorno"
+            android:layout_below="@id/textViewAppNome"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Imagem do item -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/textViewAppNome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cachorro"/>
+
+        <!-- Nome do item -->
+        <TextView
+            android:id="@+id/textViewNome"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewContorno"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tx"
+            android:text="Cachorro"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Descrição do item -->
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/textViewNome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Botão para voltar -->
+        <Button
+            android:id="@+id/buttonVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDescricao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Voltar" />
+    </RelativeLayout>
+</RelativeLayout>
