@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewApp_Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewValor01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewApp_Nome"
+        android:layout_marginTop="30sp"
+        android:text="Valor 01"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextValor01"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewValor01"
+        android:hint="Digite o primeiro valor"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewValor02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValor01"
+        android:layout_marginTop="15sp"
+        android:text="Valor 02"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextValor02"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewValor02"
+        android:hint="Digite o segundo valor"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewValor03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValor02"
+        android:layout_marginTop="15sp"
+        android:text="Valor 03"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextValor03"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewValor03"
+        android:hint="Digite o terceiro valor"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewValor04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValor03"
+        android:layout_marginTop="15sp"
+        android:text="Valor 04"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextValor04"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewValor04"
+        android:hint="Digite o quarto valor"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewOrdemLida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValor04"
+        android:layout_marginTop="30sp"
+        android:text="Ordem Lida:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOrdemCrescente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOrdemLida"
+        android:layout_marginTop="15sp"
+        android:text="Ordem Crescente:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOrdemDecrescente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOrdemCrescente"
+        android:layout_marginTop="15sp"
+        android:text="Ordem Decrescente:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewCalcular"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textViewOrdemDecrescente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/baseline_calculate_24" />
+
+
+</RelativeLayout>
